@@ -9,8 +9,12 @@
   --bgColor: #949494;
 }
 body {
-  background-color: #17153b;
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: #35363a;
+  font-family: "Tajawal", sans-serif;
+}
+button {
+  font-family: "Tajawal", sans-serif;
+  font-weight: 500;
 }
 a {
   text-decoration: none;
@@ -39,8 +43,8 @@ li {
   margin-left: 200px;
 }
 .logo {
-  width: 80px;
-  height: 50px;
+  width: 90px;
+  height: 40px;
   border-radius: 50%;
   cursor: pointer;
   margin-left: 50px;
@@ -48,10 +52,11 @@ li {
 .logo_img {
   width: 100%;
   height: 100%;
-  border-radius: 100%;
+  border-radius: 10px;
 }
 .flex span {
   font-size: 24px;
+  font-weight: 600;
 }
 
 .list {
@@ -170,8 +175,8 @@ label #btn {
 }
 label #cancel {
   z-index: 111;
-  left: 280px;
-  top: 0;
+  left: 223px;
+  top: 14px;
   font-size: 30px;
   color: #fff;
   padding: 4px 9px;
@@ -243,7 +248,7 @@ label #cancel {
   padding: 15px;
   border-radius: 20px;
   background-color: #2e3f6c;
-  margin-top: 150px;
+  margin-top: 120px;
 }
 .pro {
   display: flex;
@@ -286,7 +291,7 @@ label #cancel {
   margin-top: 20px;
   width: 100%;
   color: #0d0819;
-  transition: all .2s;
+  transition: all 0.2s;
 }
 .btn-upgrad:hover {
   background-color: rgb(212, 210, 210);
@@ -316,7 +321,8 @@ label #cancel {
   gap: 20px;
   margin-top: 100px;
 }
-.form-dezine,.media  {
+.form-dezine,
+.media {
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -348,49 +354,235 @@ button {
   gap: 10px;
 }
 .signe-acc .acc-heading {
-  color:#645e5e
+  color: #645e5e;
 }
 .signe-acc a {
   color: var(--mainColor);
 }
-.or{
+.or {
   text-align: center;
   position: relative;
   padding-left: 10px;
-
 }
-.or::after{
+.or::after {
   content: "";
   position: absolute;
-  border: .5px solid var(--bgColor);
+  border: 0.5px solid var(--bgColor);
   width: 150px;
   top: 8px;
   right: 50px;
- 
 }
-.or::before{
+.or::before {
   content: "";
   position: absolute;
-  border: .5px solid var(--bgColor);
+  border: 0.5px solid var(--bgColor);
   width: 150px;
   top: 8px;
-left: 60px; 
+  left: 60px;
 }
 
-.media .btn-media{
-    cursor: pointer;
-    background-color: transparent;
-    border: 1px solid var(--bgColor);
-    text-align: start;
-    display: flex;
-    gap: 18px;
-    font-size: 18px;
-    align-items: center;
+.media .btn-media {
+  cursor: pointer;
+  background-color: transparent;
+  border: 1px solid var(--bgColor);
+  text-align: start;
+  display: flex;
+  gap: 18px;
+  font-size: 18px;
+  align-items: center;
 }
-.media .btn-media:hover{
-    background-color: rgba(174, 171, 171, 0.3);
+.media .btn-media:hover {
+  background-color: rgba(174, 171, 171, 0.3);
 }
 /* End page Login */
+/* start chat */
+.p-btn.menu {
+  display: block;
+}
+
+.par-drop {
+  position: relative;
+  border-radius: 10px;
+  transition: all 0.5s;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.p-btn.menu:hover .par-drop {
+  opacity: 1;
+  visibility: visible;
+}
+
+.par-drop::before {
+  content: "";
+  border: 15px solid transparent;
+  position: absolute;
+  border-bottom: 15px solid #4c4949;
+  left: 10px;
+  top: -16px;
+}
+.drop {
+  position: absolute;
+  border-radius: 10px;
+  top: 10px;
+  right: -52px;
+  width: 150px;
+  background-color: #4c4949;
+  padding: 10px;
+  text-align: center;
+  display: flex;
+  gap: 18px;
+  flex-direction: column;
+}
+.avatar.bar {
+  cursor: pointer;
+}
+
+.item-menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  font-weight: 400;
+  cursor: pointer;
+  padding: 8px 5px;
+  border-radius: 5px;
+  transition: all 0.2s;
+  border-bottom: 1px solid #f08d86;
+}
+.item-menu:hover {
+  background-color: #8a828299;
+}
+/* End chat */
+/* start sidebar chat */
+.list-item-hisotry {
+  margin-top: 30px;
+}
+
+ul li.item-hisotry {
+  margin-top: 20px;
+  font-size: 14px;
+  border-top: 0;
+  line-height: 40px;
+}
+/* start sidebar chat */
+ul li.item-hisotry:hover {
+  padding-left: 0;
+}
+ul li.item-hisotry .not h4 {
+  font-size: 18px;
+  color: rgb(183, 189, 183);
+}
+ul li.item-hisotry span {
+  color: var(--bgColor);
+}
+/* End sidebar chat */
+/* strat search */
+.search {
+  width: 400px;
+  border-radius: 10px;
+  background-color: #f0f0f0;
+  display: flex;
+  align-items: center;
+  padding: 4px 14px;
+  cursor: pointer;
+}
+.search i {
+  padding: 10px;
+  background-color: rgb(169, 171, 177);
+  border-radius: 50%;
+  color: #fff;
+}
+.search input {
+  width: 100%;
+  padding: 15px;
+
+  border-radius: 10px;
+  outline: none;
+  border: 0;
+  background-color: transparent;
+}
+/* end search */
+/* Satrt Ask */
+.ask {
+  width: 60%;
+  font-size: 26px;
+  bottom: 0;
+  position: fixed;
+  left: 420px;
+  margin: 0 auto;
+  padding: 30px;
+}
+
+.ask i {
+  cursor: pointer;
+}
+.ask-text {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  border: 1px solid #000;
+  background-color: #d5dae7;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-top: transparent;
+}
+.ask-text input {
+  width: 78%;
+  background-color: transparent;
+  outline: none;
+  border: 0;
+  padding: 35px;
+  cursor: pointer;
+}
+.upload {
+  width: 100%;
+  background-color: #c5afad;
+  padding: 20px;
+  border: 1px solid #000;
+  border-bottom: 0;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  display: flex;
+  
+}
+.item-info {
+  padding: 10px;
+  font-size: 18px;
+  margin-right: 20px;
+  display: inline;
+  border-radius: 10px;
+  background-color: #fff;
+  cursor: pointer;
+}
+.control {
+  position: relative;
+}
+.control::before {
+  content: "";
+  border: 10px solid transparent;
+  border-top: 10px solid #000;
+  position: absolute;
+  top: -11px;
+  left: 7px;
+}
+.show {
+  position: absolute;
+  top: -34px;
+  background-color: #000;
+  color: #fff;
+  padding: 5px 10px;
+  text-align: center;
+  font-size: 12px;
+  left: -30px;
+  width: 100px;
+  visibility: hidden;
+}
+.item-info:hover .show{
+  visibility: visible;
+}
+/* End Ask */
 /* Media Query */
 
 @media (min-width: 300px) and (max-width: 768px) {
@@ -440,13 +632,13 @@ left: 60px;
     background-color: transparent;
   }
   /* meadia login */
-  .pg-login{
+  .pg-login {
     margin-top: 150px;
   }
-  .title{
+  .title {
     font-size: 20px;
   }
-  .bg-login{
+  .bg-login {
     display: none;
   }
 }
