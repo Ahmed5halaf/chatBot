@@ -14,6 +14,34 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
+    <nav class="header">
+      <div class="flex">
+        <div class="logo">
+          <img src="./images/logo.jpg" alt="" class="logo_img" />
+        </div>
+        <div>
+          <span>CHat Bot</span>
+        </div>
+      </div>
+      <div>
+        <ul class="list">
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+      <div class="p-btn">
+        <button class="login home">
+          <a href="login.html">Login</a>
+          <i class="fa-solid fa-right-to-bracket"></i>
+        </button>
+        <button class="signe">
+          <a href="#">Sign up</a>
+        </button>
+      </div>
+    </nav>
+
+    <!--End Nav -->
     <div class="conatiner">
       <input type="checkbox" id="check" />
       <label for="check">
@@ -21,37 +49,10 @@
         <i class="fa-solid fa-square-xmark" id="cancel"></i>
       </label>
       <!--Start Nav -->
-      <nav class="header">
-        <div class="flex">
-          <div class="logo">
-            <img src="./images/logo.jpg" alt="" class="logo_img" />
-          </div>
-          <div>
-            <span>CHat Bot</span>
-          </div>
-        </div>
-        <div>
-          <ul class="list">
-            <li><a href="index.html" class="active">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
-          </ul>
-        </div>
-        <div class="p-btn">
-          <button class="login">
-            <a href="login.html">Login</a>
-            <i class="fa-solid fa-right-to-bracket"></i>
-          </button>
-          <button class="signe">
-            <a href="#">Sign up</a>
-          </button>
-        </div>
-      </nav>
 
-      <!--End Nav -->
       <!-- Start Sidebar -->
 
-      <div class="sidebar">
+      <div class="sidebar min">
         <div class="main-ul">
           <ul class="item">
             <li>
@@ -120,6 +121,27 @@
       </div>
 
       <!-- End Sidebar -->
+      <div class="card-item">
+        <div class="par-item">
+          <div class="mar">
+            <div class="hed">
+              <i class="fa-solid fa-handshake-angle"></i>
+              <h3>Help</h3>
+            </div>
+            <h4>How can i help you today?</h4>
+          </div>
+          <div class="mar">
+            <div class="hed">
+              <i class="fa-regular fa-pen-to-square"></i>
+              <h3>Edit</h3>
+            </div>
+            <h4>Edit anything text !</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div>
+      <footer><h3>all rights are save &copy; 2024</h3></footer>
     </div>
 
     <script src="js/script.js"></script>
