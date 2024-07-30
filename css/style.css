@@ -32,7 +32,7 @@ li {
   width: 90%;
   margin: 0 auto;
 }
-.conatiner.chat{
+.conatiner.chat {
   width: 95%;
 }
 /* Global Classes */
@@ -43,7 +43,6 @@ li {
   align-items: center;
   color: #fff;
   transition: all 0.5s;
-  margin-left: 272px;
   padding: 20px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08), 0 4px 12px rgba(0, 0, 0, 0.08);
 }
@@ -52,7 +51,7 @@ li {
   height: 40px;
   border-radius: 50%;
   cursor: pointer;
-  margin-left: 50px;
+  margin-left: 275px;
 }
 .logo_img {
   width: 100%;
@@ -115,11 +114,26 @@ li {
   background-color: transparent;
   color: #3e3553;
   border: 1px solid var(--mainColor);
+  padding: 0;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: space-between;
 }
 .login.home a {
   color: #3e3553;
+  padding: 10px 20px;
+  padding-right: 0;
 }
+.login.home i {
+  color: #3e3553;
+  padding: 0 20px;
+  padding-left: 0;
+  }
 .login.home:hover a {
+  color: #fff;
+}
+.login.home:hover i {
   color: #fff;
 }
 .login.home:hover {
@@ -269,7 +283,7 @@ label #cancel {
   padding: 15px;
   border-radius: 20px;
   background-color: #2e3f6c;
-  margin-top: 120px;
+  margin-top: 80px;
 }
 .pro {
   display: flex;
@@ -354,6 +368,7 @@ img {
   width: 80%;
   margin: 0 auto;
   cursor: pointer;
+  margin-bottom: 20px;
 }
 .form-dezine input,
 button {
@@ -851,7 +866,7 @@ footer {
     margin-bottom: 15px;
   }
   .search {
-    width: 300px;
+    width: 220px;
   }
   .header {
     margin-left: 100px;
@@ -898,6 +913,9 @@ footer {
   }
   .ask .par-upload {
     margin-bottom: 30px;
+  }
+  .media {
+    margin-bottom: 20px;
   }
   .media .btn-media {
     font-size: 16px;
